@@ -1,0 +1,59 @@
+/* Main collapsible styles */
+.collapsible {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--small-gap-size);
+  width: 30%;
+  min-width: 250px;
+  align-items: center;
+  padding: 12px;
+  border-radius: var(--small-radius-size);
+  justify-content: center;
+  color: var(--white);
+  cursor: pointer;
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
+
+  svg {
+    width: 20px;
+    fill: var(--white);
+  }
+}
+
+
+
+.collapsible.expanded {
+  width: 70%;
+}
+
+.collapsible:hover {
+  filter: brightness(80%);
+  -webkit-filter: brightness(80%);
+}
+
+.collapsible, .arrow {
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.arrow.expanded {
+  transform: rotate(180deg);
+}
+
+.collapsible.share {
+  box-shadow: 1px 1px 6px 2px var(--light-grey);
+  text-decoration: none;
+  background: linear-gradient(to right, var(--normal-blue), var(--light-blue));
+}
+
+/* Specific collapsible styles */
+.collapsible-content.share {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  column-gap: var(--small-gap-size);
+}

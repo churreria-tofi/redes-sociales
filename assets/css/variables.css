@@ -1,0 +1,46 @@
+:root {
+  /* Colors */
+  --medium-dark-churro-color: #9a8763;
+  --dark-churro-color: #806b46;
+  --light-grey: #cbcbcb;
+  --dark-grey: #4e4e4e;
+  --normal-blue: #0039f3;
+  --light-blue: #07a7ff;
+  --white: #fff;
+  --dark-mango-pulp-orange: #7b4d0b;
+  --mango-pulp-orange: #f09819;
+  --mango-pulp-yellow: #edde5d; 
+
+  --instagram-purple: #833ab4;
+  --instagram-pink: #de20c1;
+  --instagram-red: #fd1d1d;
+  --instagram-yellow: #ffdb00;
+  
+  --facebook-blue: #0866FF;
+  --facebook-light-blue: #00b4ff;
+
+  --whatsapp-green: #25d366;
+  --whatsapp-light-green: #3eff84;
+
+  --twitter-black: #000000;
+
+  --telegram-blue: #50a2dc;
+
+  --google-red: #ea4335;
+  --google-blue: #4285f4;
+  --google-yellow: #fbbc05;
+  --google-green: #34a853;
+  
+  /* Font sizes */
+  --page-font-size: 16px;
+  --main-font-size: 1rem;
+  --small-font-size: 0.7rem;
+
+  /* Gap sizes */
+  --medium-gap-size: 24px;
+  --small-gap-size: 12px;
+
+  /* Radius sizes */
+  --medium-radius-size: 20px;
+  --small-radius-size: 10px;
+}
