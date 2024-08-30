@@ -22,18 +22,22 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  
+  display: -ms-flex-box;
+  -ms-flex-direction: row;
+
   height: 5rem;
   background: linear-gradient(180deg, var(--mango-pulp-orange), var(--mango-pulp-yellow));
   box-shadow: 1px 0px 3px 3px var(--dark-mango-pulp-orange);
+}
 
-  .logo {
-    width: 7rem;
-    height: auto;
-    position: relative;
-    top: 2rem;
-    border-radius: var(--medium-radius-size);
-    box-shadow: 0px 1px 4px 1px var(--dark-mango-pulp-orange);
-  }
+header .logo {
+  width: 7rem;
+  height: auto;
+  position: relative;
+  top: 2rem;
+  border-radius: var(--medium-radius-size);
+  box-shadow: 0px 1px 4px 1px var(--dark-mango-pulp-orange);
 }
 
 main {
@@ -41,32 +45,42 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  display: -ms-flex-box;
+  -ms-flex-direction: column;
+  -ms-flex-align: center;
+
   margin-top: 4rem;
   row-gap: var(--medium-gap-size);
+}
 
-  section {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    margin-bottom: 0.55rem;
-    align-items: center;
+main #share-section {
+  margin-bottom: 1.5rem;
+}
 
-    .section-container {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-evenly;
-      flex-wrap: wrap;
-      flex-direction: column;
-    }
+main section {
+  display: flex;
+  flex-direction: column;
+  -webkit-flex-direction: column;
+  width: 80%;
+  margin-bottom: 0.55rem;
+  align-items: center;
+  -webkit-box-align: center;
+}
 
-    .section-container.social-networks {
-      row-gap: var(--medium-gap-size);
-    }
-  }
+main section .section-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  
+}
 
-  #share-section {
-    margin-bottom: 1.5rem;
-  }
+main section .section-container.social-networks {
+  row-gap: var(--medium-gap-size);
 }
 
 footer {
@@ -78,12 +92,14 @@ footer {
   text-align: center;
   display: flex;
   align-items: center;
+  -webkit-box-align: center;
   justify-content: center;
   font-size: var(--small-font-size);
-  a {
-    text-decoration: none;
-    color: var(--dark-churro-color);
-  }
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--dark-churro-color);
 }
 
 .opening-hours {
