@@ -24,7 +24,9 @@
 
   --twitter-black: #000000;
 
-  --telegram-blue: #50a2dc;
+  --telegram-blue: invert(49%) sepia(64%) saturate(475%) hue-rotate(177deg) brightness(111%) contrast(75%);
+
+  --location-red: invert(26%) sepia(31%) saturate(7140%) hue-rotate(349deg) brightness(95%) contrast(91%);
 
   --google-red: #ea4335;
   --google-blue: #4285f4;
