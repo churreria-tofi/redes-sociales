@@ -1,46 +1,52 @@
 .instagram {
   background: linear-gradient(150deg, var(--instagram-purple) 7%, var(--instagram-pink) 27%, var(--instagram-red) 69%, var(--instagram-yellow) 97%);
   color: var(--white);
-  svg {
-    width: 35px;
-  }
+}
+
+.instagram svg {
+  width: 35px;
 }
 
 .facebook {
   background: linear-gradient(to right, var(--facebook-blue), var(--facebook-light-blue));
-  svg {
-    width: 20px;
-  }
+}
+
+.facebook svg {
+  width: 20px;
 }
 
 .whatsapp {
   background: linear-gradient(44deg, var(--whatsapp-green) 58%, var(--whatsapp-light-green) 91%);
-  svg {
-    width: 35px;
-  }
+}
+
+.whatsapp svg {
+  width: 35px;
 }
 
 .twitter {
   background: var(--twitter-black);
-  svg {
-    width: 35px;
-  }
+}
+
+.twitter svg {
+  width: 35px;
 }
 
 .telegram {
   background: var(--white);
-  svg {
-    fill: var(--telegram-blue);
-    width: 40px;
-  }
+}
+
+.telegram svg {
+  filter: var(--telegram-blue);
+  width: 40px;
 }
 
 .location {
   background: var(--white);
-  svg {
-    width: 25px;
-    fill: var(--instagram-red);
-  }
+}
+
+.location svg {
+  width: 25px;
+  filter: var(--location-red);
 }
 
 .google {
@@ -51,32 +57,33 @@
   border-bottom: 8px solid var(--google-green);
   border-radius: var(--medium-radius-size);
   background-color: var(--white);
-  width: 24px;
-  height: 25px;
+  width: 20px;
+  height: 21px;
   padding: 0;
   margin: 0vh auto 0;
-
-  &::before {
-    content: "";
-    z-index: 100;
-    position: absolute;
-    top: 50%;
-    right: -7px;
-    transform: translateY(-50%);
-    height: 7px;
-    width: 19px;
-    background-color: var(--google-blue);
-  }
-
-  &::after {
-    content: "";
-    z-index: 101;
-    position: absolute;
-    border-top: 19px solid transparent;
-    border-right: 20px solid var(--white);
-    top: -10px;
-    right: -10px;
-    height: 0px;
-    width: 0;
-  }
 }
+
+.google::before {
+  content: "";
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  right: -7px;
+  transform: translateY(-50%);
+  height: 7px;
+  width: 19px;
+  background-color: var(--google-blue);
+}
+
+.google::after {
+  content: "";
+  z-index: 101;
+  position: absolute;
+  border-top: 19px solid transparent;
+  border-right: 20px solid var(--white);
+  top: -12px;
+  right: -10px;
+  height: 0px;
+  width: 0;
+}
+
